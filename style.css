@@ -83,17 +83,17 @@ main p { color: #333; }
 
 /* People page */
 .leader { display: grid; grid-template-columns: 190px 1fr; gap: 34px; padding-bottom: 35px; }
-.leader img { width: 190px; height: 220px; object-fit: cover; object-position: center 30%; border-radius: 4px; }
+.leader img { display: block; width: 180px; max-width: 100%; height: 220px; object-fit: cover; object-position: center 30%; border-radius: 4px; }
 .leader h2 { margin: 0 0 7px; padding: 0; border: 0; color: var(--ink); font-family: Georgia, serif; font-size: 34px; font-weight: 400; }
 .role { color: var(--burgundy); }
 .people-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 28px; }
 .person { min-width: 0; padding: 20px 0; border-top: 1px solid var(--line); }
-.person img { display: block; width: 100%; aspect-ratio: 4 / 5; height: auto; margin-bottom: 16px; border-radius: 4px; object-fit: cover; object-position: center 30%; }
+.person img { display: block; width: 180px; max-width: 100%; height: 220px; margin-bottom: 16px; border-radius: 4px; object-fit: cover; object-position: center 30%; }
 .person h3 { margin: 0 0 6px; color: var(--teal); font-size: 19px; }
 .person p { margin: 0; font-size: 15px; }
 .alumni { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .alumni article { min-width: 0; }
-.alumni img { display: block; width: 100%; aspect-ratio: 4 / 5; height: auto; margin-bottom: 16px; border-radius: 4px; object-fit: cover; object-position: center 30%; }
+.alumni img { display: block; width: 180px; max-width: 100%; height: 220px; margin-bottom: 16px; border-radius: 4px; object-fit: cover; object-position: center 30%; }
 .alumni h3 { margin-bottom: 6px; color: var(--teal); font-size: 17px; }
 .alumni p { margin: 0; font-size: 15px; }
 .source-note { margin-top: 22px; font-size: 13px; }
@@ -180,7 +180,7 @@ footer p { margin: 9px 0 0; color: var(--muted); }
   .community { display: block; }
   .community-links { display: block; margin-top: 14px; }
   .community-links a { display: block; margin-top: 8px; }
-  .leader img { width: 160px; height: 185px; margin-bottom: 22px; }
+  .leader img, .person img, .alumni img { width: 150px; height: 185px; margin-bottom: 16px; }
   .people-grid, .alumni { grid-template-columns: 1fr; }
   .project-entry { grid-template-columns: 1fr; gap: 12px; }
   .project-meta { flex-direction: row; justify-content: space-between; align-items: baseline; }
