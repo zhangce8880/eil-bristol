@@ -86,11 +86,14 @@ main p { color: #333; }
 .leader img { width: 190px; height: 220px; object-fit: cover; object-position: center 30%; border-radius: 4px; }
 .leader h2 { margin: 0 0 7px; padding: 0; border: 0; color: var(--ink); font-family: Georgia, serif; font-size: 34px; font-weight: 400; }
 .role { color: var(--burgundy); }
-.people-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 28px; }
-.person { padding: 20px 0; border-top: 1px solid var(--line); }
+.people-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 28px; }
+.person { min-width: 0; padding: 20px 0; border-top: 1px solid var(--line); }
+.person img { display: block; width: 100%; aspect-ratio: 4 / 5; height: auto; margin-bottom: 16px; border-radius: 4px; object-fit: cover; object-position: center 30%; }
 .person h3 { margin: 0 0 6px; color: var(--teal); font-size: 19px; }
 .person p { margin: 0; font-size: 15px; }
 .alumni { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.alumni article { min-width: 0; }
+.alumni img { display: block; width: 100%; aspect-ratio: 4 / 5; height: auto; margin-bottom: 16px; border-radius: 4px; object-fit: cover; object-position: center 30%; }
 .alumni h3 { margin-bottom: 6px; color: var(--teal); font-size: 17px; }
 .alumni p { margin: 0; font-size: 15px; }
 .source-note { margin-top: 22px; font-size: 13px; }
